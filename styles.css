@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: black;
+}
+
+#main {
+	margin: 100px;
+	position: relative;
+}
+
+.cont {
+	height: 150px;
+	width: 100%;
+	border-bottom: 2px solid white;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+h1 {
+	font-size: 10vmin;
+	z-index: -9;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	opacity: 0;
+	transition: all linear 0.3s;
+	mix-blend-mode: difference;
+	/* transform: translate(50%, 50%); */
+}
